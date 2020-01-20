@@ -18,12 +18,13 @@ input.addEventListener('keyup', function(event){
     }
 });
 
-setInterval(function(){ changeColor(); }, 200);
+setInterval(function(){ changeColor(); }, 1500);
 
 function changeColor() {
     $(box).each(function(element){
         console.log(this.style.backgroundColor);
         this.style.backgroundColor = colors[Math.floor(Math.random() * Math.floor(colors.length))];
-        this.style.transform = "rotate(" + Math.floor(Math.random() * Math.floor(200)) + "deg)"
+        this.style.transform = "rotate(" + Math.floor(Math.random(500) * Math.floor(400)) + "deg)"
     });
+    document.body.style.backgroundColor = input.value;
 }

@@ -1,0 +1,5 @@
+*
+!.gitignore
+!index.html
+!jquery-3.3.1.min.js
+!testing.js
